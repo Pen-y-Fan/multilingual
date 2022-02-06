@@ -49,32 +49,15 @@ Generate an APP_KEY using the artisan command
 php artisan key:generate
 ```
 
-## Install Database
+## Start the app
 
-This experiment uses models and seeders to generate the tables for the database.
-
-## Configure Laravel
-
-Once the multilingual database has been created on your MySQL server, configure the Laravel **.env** file with the database,
-updating username and password as per you local setup.
-
-```text
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=multilingual
-DB_USERNAME=YourDatabaseUserName
-DB_PASSWORD=YourDatabaseUserPassword
+```shell
+php artisan serve
 ```
 
-## Run tests
+## Access the route
 
-To make it easy to run all the PHPUnit tests a composer script has been created in composer.json. From the root of the
-projects, run:
-
-```shell script
-composer tests
-```
+Open your browser to: <https://localhost:8000/lang/home>
 
 ## Contributing
 
