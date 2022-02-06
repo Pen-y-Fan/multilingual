@@ -49,6 +49,33 @@ Generate an APP_KEY using the artisan command
 php artisan key:generate
 ```
 
+## run tests
+
+```shell
+composer test
+```
+
+All being well you should see the tests run successfully: 
+
+```text
+ PHPUnit 9.5.13 by Sebastian Bergmann and contributors.
+
+Example (Tests\Unit\Example)
+ ✔ Example
+
+Example (Tests\Feature\Example)
+ ✔ Example
+
+Language (Tests\Feature\Language)
+ ✔ The default language is english
+ ✔ The language can be set to spanish
+ ✔ The language can be set to french
+
+Time: 00:00.139, Memory: 22.00 MB
+
+OK (5 tests, 13 assertions)
+```
+
 ## Start the app
 
 ```shell
